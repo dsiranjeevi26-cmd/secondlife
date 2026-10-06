@@ -1,0 +1,111 @@
+[
+  {
+    "id": "old-laptop",
+    "name": "Old Laptop",
+    "icon": "Laptop",
+    "description": "Decommissioned notebook or netbook with dead motherboard or cracked hinge.",
+    "warnings": [
+      "Li-ion battery pack: Never puncture, bend, or short-circuit terminals.",
+      "Discharge residual inverter or power supply caps before touching board traces.",
+      "Wear eye protection when prying plastic snaps and display bezels."
+    ],
+    "salvage": [
+      { "componentId": "laptop-fan", "qty": 1, "condition": "Working" },
+      { "componentId": "battery-18650", "qty": 4, "condition": "Untested" },
+      { "componentId": "speaker-8ohm", "qty": 2, "condition": "Working" },
+      { "componentId": "laptop-power-brick", "qty": 1, "condition": "Working" },
+      { "componentId": "usb-cable", "qty": 1, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 2, "condition": "Working" },
+      { "componentId": "capacitors-pack", "qty": 1, "condition": "Untested" },
+      { "componentId": "resistors-pack", "qty": 1, "condition": "Working" },
+      { "componentId": "vibration-motor", "qty": 1, "condition": "Untested" }
+    ]
+  },
+  {
+    "id": "old-smartphone",
+    "name": "Old Smartphone",
+    "icon": "Smartphone",
+    "description": "Obsolete Android or iOS phone with broken battery or outdated OS.",
+    "warnings": [
+      "Lithium-polymer pouch battery can swell or catch fire if punctured.",
+      "Use heat gun or hair dryer on low heat to soften adhesive without blistering cells."
+    ],
+    "salvage": [
+      { "componentId": "phone-screen", "qty": 1, "condition": "Working" },
+      { "componentId": "vibration-motor", "qty": 1, "condition": "Working" },
+      { "componentId": "speaker-8ohm", "qty": 1, "condition": "Working" },
+      { "componentId": "phone-charger", "qty": 1, "condition": "Working" },
+      { "componentId": "usb-cable", "qty": 1, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 1, "condition": "Working" }
+    ]
+  },
+  {
+    "id": "broken-keyboard",
+    "name": "Broken USB Keyboard",
+    "icon": "Keyboard",
+    "description": "Membrane or mechanical keyboard with non-functional keys or severed cord.",
+    "warnings": [
+      "Handle circuit traces gently; flexible membrane ribbon cables tear easily.",
+      "Watch out for small metal spring clips popping loose during disassembly."
+    ],
+    "salvage": [
+      { "componentId": "keyboard-matrix", "qty": 1, "condition": "Working" },
+      { "componentId": "usb-cable", "qty": 1, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 3, "condition": "Working" },
+      { "componentId": "led-pack", "qty": 1, "condition": "Working" },
+      { "componentId": "resistors-pack", "qty": 1, "condition": "Working" }
+    ]
+  },
+  {
+    "id": "old-router",
+    "name": "Old Wi-Fi Router",
+    "icon": "Wifi",
+    "description": "Retired ISP gateway or 2.4GHz Wi-Fi access point.",
+    "warnings": [
+      "Wall adapter must be unplugged from mains AC for at least 5 minutes before opening casing.",
+      "Internal electrolytic filtering capacitors may retain high voltage."
+    ],
+    "salvage": [
+      { "componentId": "adapter-5v", "qty": 1, "condition": "Working" },
+      { "componentId": "led-pack", "qty": 2, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 1, "condition": "Working" },
+      { "componentId": "capacitors-pack", "qty": 1, "condition": "Untested" },
+      { "componentId": "resistors-pack", "qty": 1, "condition": "Working" }
+    ]
+  },
+  {
+    "id": "dead-pc-smps",
+    "name": "Dead Desktop PC (SMPS)",
+    "icon": "Cpu",
+    "description": "Defective ATX Desktop Power Supply unit and chassis.",
+    "warnings": [
+      "DANGER: Large primary 400V capacitors can hold lethal charge even days after unplugging! Discharge with insulated high-wattage resistor before touching.",
+      "Do NOT plug SMPS directly into mains with open housing."
+    ],
+    "salvage": [
+      { "componentId": "laptop-fan", "qty": 1, "condition": "Working" },
+      { "componentId": "capacitors-pack", "qty": 2, "condition": "Untested" },
+      { "componentId": "resistors-pack", "qty": 2, "condition": "Working" },
+      { "componentId": "speaker-8ohm", "qty": 1, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 2, "condition": "Working" },
+      { "componentId": "usb-cable", "qty": 1, "condition": "Working" }
+    ]
+  },
+  {
+    "id": "cd-dvd-drive",
+    "name": "Discarded CD/DVD Drive",
+    "icon": "Disc",
+    "description": "Obsolete optical drive from desktop computer or external enclosure.",
+    "warnings": [
+      "Avoid direct line-of-sight exposure to laser diode when powered up.",
+      "Greased mechanical worm gears can attract dust; degrease before clean reuse."
+    ],
+    "salvage": [
+      { "componentId": "optical-drive-laser", "qty": 1, "condition": "Untested" },
+      { "componentId": "dc-motor", "qty": 1, "condition": "Working" },
+      { "componentId": "stepper-motor", "qty": 1, "condition": "Working" },
+      { "componentId": "push-buttons", "qty": 1, "condition": "Working" },
+      { "componentId": "led-pack", "qty": 1, "condition": "Working" }
+    ]
+  }
+]

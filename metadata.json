@@ -1,0 +1,6 @@
+{
+  "name": "SecondLife",
+  "description": "SecondLife is an e-waste repurposing platform that turns discarded electronics and unused components into viable DIY projects with feasibility scoring, teardown guides, and waste diversion analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

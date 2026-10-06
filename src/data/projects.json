@@ -1,0 +1,484 @@
+[
+  {
+    "id": "auto-night-lamp",
+    "title": "Automatic Night Lamp",
+    "description": "Smart energy-saving light that automatically activates when ambient light levels drop below a customizable threshold using an LDR sensor.",
+    "difficulty": "Beginner",
+    "timeHours": 1.5,
+    "tags": ["Home Automation", "Arduino", "Lighting", "Energy Saving"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "ldr-sensor", "qty": 1, "critical": true },
+      { "componentId": "resistors-pack", "qty": 1, "critical": true },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "breadboard", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false },
+      { "componentId": "usb-cable", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Connect the LDR in series with a 10k resistor from the resistor pack to form a voltage divider.",
+      "Wire the junction between LDR and 10k resistor to Arduino Analog Pin A0.",
+      "Connect the other end of LDR to 5V and resistor to GND.",
+      "Place an LED with a 220-ohm resistor into Pin 13 and GND.",
+      "Upload the threshold check sketch via Arduino IDE and calibrate the ambient cut-off value."
+    ],
+    "safetyNote": "Low-voltage 5V circuit. Safe for beginners. Do not connect high-voltage AC bulbs directly without an optoisolated relay."
+  },
+  {
+    "id": "ultrasonic-parking-sensor",
+    "title": "Ultrasonic Parking Assistant",
+    "description": "Garage parking guide that calculates vehicle distance and beeps at increasing frequencies as cars approach garage walls.",
+    "difficulty": "Beginner",
+    "timeHours": 2.0,
+    "tags": ["Automotive", "Sensors", "Safety", "Audio"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "hc-sr04", "qty": 1, "critical": true },
+      { "componentId": "piezo-buzzer", "qty": 1, "critical": true },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "breadboard", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Mount HC-SR04 ultrasonic sensor at bumper height on your garage wall.",
+      "Connect sensor Trig pin to Arduino digital pin 9 and Echo to pin 10.",
+      "Wire the positive lead of the piezo buzzer to digital pin 8 and negative to GND.",
+      "Wire green, yellow, and red LEDs to indicate Safe (>1m), Warning (50cm-1m), and Stop (<30cm).",
+      "Flash timing calculation firmware to pulse buzzer tone inverse to measured transit distance."
+    ],
+    "safetyNote": "Ensure ultrasonic sensor transducers remain unblocked by road grime or outdoor rain spray."
+  },
+  {
+    "id": "smart-dustbin",
+    "title": "Contactless Smart Dustbin",
+    "description": "Touchless hygiene waste bin with ultrasonic hand proximity detection that swings the lid open automatically using a micro servo.",
+    "difficulty": "Beginner",
+    "timeHours": 2.5,
+    "tags": ["Hygiene", "Robotics", "Home", "Eco"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "hc-sr04", "qty": 1, "critical": true },
+      { "componentId": "servo-sg90", "qty": 1, "critical": true },
+      { "componentId": "battery-9v", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false },
+      { "componentId": "breadboard", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Attach the SG90 micro servo arm securely to the flap hinge of your trash can.",
+      "Mount the ultrasonic sensor facing upward or forward on the rim.",
+      "Wire the servo PWM signal wire (orange/yellow) to Nano digital pin 9.",
+      "Wire HC-SR04 Trig to pin 6 and Echo to pin 5.",
+      "Program the servo to swing 90 degrees when distance < 20cm, pause for 4 seconds, then smoothly close."
+    ],
+    "safetyNote": "Ensure mechanical lid counter-weight does not exceed 9g servo gear torque limit to avoid stripped teeth."
+  },
+  {
+    "id": "soil-moisture-alert",
+    "title": "Smart Plant Moisture Sentinel",
+    "description": "Monitors potted soil hydration levels and triggers visual alerts or buzzer chimes when moisture drops below root-health thresholds.",
+    "difficulty": "Beginner",
+    "timeHours": 1.5,
+    "tags": ["Gardening", "Sensors", "Agriculture", "Eco"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "soil-moisture", "qty": 1, "critical": true },
+      { "componentId": "piezo-buzzer", "qty": 1, "critical": false },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false },
+      { "componentId": "battery-9v", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Insert soil moisture sensor probe into root depth of houseplant soil.",
+      "Connect sensor VCC to Arduino 5V, GND to GND, and Analog Out to A0.",
+      "Wire buzzer to digital pin 8 with current-limiting resistor.",
+      "Calibrate dry soil (typically >700 raw ADC) and soaked soil (<350 raw ADC).",
+      "Set microcontroller into power-down sleep between measurements to preserve battery life."
+    ],
+    "safetyNote": "Only immerse probe prongs; do not wet electronic header pins on top of PCB."
+  },
+  {
+    "id": "salvaged-phone-display",
+    "title": "Salvaged Phone Secondary Monitor",
+    "description": "Repurpose an obsolete smartphone screen into a dedicated desktop stats HUD, Spotify dashboard, or PC thermal monitor over USB.",
+    "difficulty": "Intermediate",
+    "timeHours": 3.0,
+    "tags": ["Upcycling", "Display", "Productivity", "PC Mod"],
+    "requirements": [
+      { "componentId": "phone-screen", "qty": 1, "critical": true },
+      { "componentId": "usb-cable", "qty": 1, "critical": true },
+      { "componentId": "phone-charger", "qty": 1, "critical": false },
+      { "componentId": "push-buttons", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Clean phone bezel and install open-source scrcpy or Spacedesk client on desktop host.",
+      "Enable USB debugging under developer settings on the target smartphone board.",
+      "Configure low-latency virtual display canvas at native phone resolution.",
+      "Build custom 3D-printed or cardboard desktop tilt stand for landscape presentation.",
+      "Pin system telemetry (CPU temp, GPU usage, network bandwidth) to auto-launch on startup."
+    ],
+    "safetyNote": "If powering continuously on desk, ensure battery charge threshold is locked at 70-80% to avoid lithium swelling."
+  },
+  {
+    "id": "powerbank-18650",
+    "title": "Salvaged 18650 Modular Power Bank",
+    "description": "Rescue healthy 18650 lithium cells recovered from dead laptop battery packs to construct a reliable, high-capacity portable USB power bank.",
+    "difficulty": "Intermediate",
+    "timeHours": 3.5,
+    "tags": ["Power", "Battery", "Upcycling", "Portable"],
+    "requirements": [
+      { "componentId": "battery-18650", "qty": 2, "critical": true },
+      { "componentId": "tp4056", "qty": 1, "critical": true },
+      { "componentId": "boost-converter", "qty": 1, "critical": true },
+      { "componentId": "usb-cable", "qty": 1, "critical": false },
+      { "componentId": "capacitors-pack", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Test individual 18650 cell voltages; discard any cells below 2.0V or exhibiting high internal resistance.",
+      "Wire cells in parallel (positive to positive, negative to negative) to double mAh capacity.",
+      "Solder cell bank to TP4056 battery input pads (B+ and B-) with overdischarge protection.",
+      "Connect TP4056 output pads (OUT+ and OUT-) to MT3608 boost converter input.",
+      "Tune MT3608 potentiometer trimpot until output voltmeter reads strictly 5.10V.",
+      "Solder female USB-A jack to regulated 5V output and enclose in flame-retardant case."
+    ],
+    "safetyNote": "CRITICAL BATTERY SAFETY: Never heat cell terminals directly with prolonged soldering iron contact. Use spot welder or insulated battery sled clips."
+  },
+  {
+    "id": "bluetooth-rc-car",
+    "title": "Bluetooth Smartphone RC Car",
+    "description": "Smartphone-steered two-wheel drive robotic rover communicating over serial Bluetooth link via an Android/iOS controller app.",
+    "difficulty": "Intermediate",
+    "timeHours": 4.0,
+    "tags": ["Robotics", "Bluetooth", "Motors", "Arduino"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "l298n-driver", "qty": 1, "critical": true },
+      { "componentId": "hc-05", "qty": 1, "critical": true },
+      { "componentId": "dc-motor", "qty": 2, "critical": true },
+      { "componentId": "chassis-wheels", "qty": 1, "critical": false },
+      { "componentId": "battery-18650", "qty": 2, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Assemble 2WD acrylic chassis and bolt two DC gear motors to wheel mounts.",
+      "Connect motor leads to L298N Out1-Out2 and Out3-Out4 terminals.",
+      "Wire L298N logic input pins (IN1, IN2, IN3, IN4) to Arduino digital pins 5, 6, 9, 10.",
+      "Wire HC-05 TX to Arduino RX (pin 0 or software serial) and RX through voltage divider to pin 1.",
+      "Pair phone over Bluetooth, install controller app, and map Forward, Reverse, Left, Right commands."
+    ],
+    "safetyNote": "Disconnect HC-05 RX/TX pins when uploading sketches via USB to prevent hardware serial contention."
+  },
+  {
+    "id": "laptop-fan-desk-cooler",
+    "title": "Laptop Blower Desk Cooler",
+    "description": "Convert high-airflow 5V centrifugal laptop fans into quiet, focused personal desk cooling turbines with variable potentiometer speed control.",
+    "difficulty": "Beginner",
+    "timeHours": 1.5,
+    "tags": ["Upcycling", "Cooling", "Desk Setup", "Motors"],
+    "requirements": [
+      { "componentId": "laptop-fan", "qty": 1, "critical": true },
+      { "componentId": "potentiometer-10k", "qty": 1, "critical": true },
+      { "componentId": "usb-cable", "qty": 1, "critical": true },
+      { "componentId": "push-buttons", "qty": 1, "critical": false },
+      { "componentId": "capacitors-pack", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Identify blower fan leads: Red (+5V DC), Black (GND), Yellow (RPM/Tach), Blue (PWM).",
+      "Strip a recycled USB-A cable to expose Red (+5V) and Black (GND) power wires.",
+      "Wire potentiometer as voltage rheostat or connect PWM control pin through inline trimmer.",
+      "Add 100uF smoothing capacitor across 5V rail to prevent induction motor kickback into USB ports.",
+      "Mount blower inside wooden or cardboard stand with directed air nozzle."
+    ],
+    "safetyNote": "Keep fingers clear of spinning impeller blades. Add mesh guard over intake duct."
+  },
+  {
+    "id": "usb-desk-fan",
+    "title": "USB Personal Table Fan",
+    "description": "Compact desktop cooling fan powered directly by any standard 5V computer port or power bank using salvaged DC motors.",
+    "difficulty": "Beginner",
+    "timeHours": 1.0,
+    "tags": ["Cooling", "USB", "Beginner", "Eco"],
+    "requirements": [
+      { "componentId": "dc-motor", "qty": 1, "critical": true },
+      { "componentId": "usb-cable", "qty": 1, "critical": true },
+      { "componentId": "push-buttons", "qty": 1, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Cut and strip the outer sheath of a surplus USB cable to isolate red (+5V) and black (GND).",
+      "Install an inline push-button toggle switch on the positive 5V supply wire.",
+      "Solder motor terminals to the switch and ground leads; verify clockwise rotation.",
+      "Fashion propeller blades from recycled plastic card stock or bottle plastic.",
+      "Secure motor body firmly to heavy anti-tip tabletop base."
+    ],
+    "safetyNote": "Ensure propeller is securely fastened to motor shaft to prevent projectile hazard at high RPM."
+  },
+  {
+    "id": "pir-motion-alarm",
+    "title": "PIR Motion Security Siren",
+    "description": "Perimeter intrusion detector that senses body heat movement using passive infrared and sounds an alert chime while flashing warning LEDs.",
+    "difficulty": "Beginner",
+    "timeHours": 2.0,
+    "tags": ["Security", "Sensors", "Home", "Alarm"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "pir-sensor", "qty": 1, "critical": true },
+      { "componentId": "piezo-buzzer", "qty": 1, "critical": true },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "battery-9v", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Wire PIR sensor VCC to Arduino 5V, GND to GND, and digital Output pin to D2.",
+      "Connect piezo buzzer positive pin to D8 and negative to GND.",
+      "Wire flashing red alarm LED to D12 with current-limiting resistor.",
+      "Calibrate PIR time-delay and sensitivity trimmer potentiometers on sensor body.",
+      "Program interrupt routine on Pin 2 to immediately sound pulsating siren sequence upon movement."
+    ],
+    "safetyNote": "Allow 60 seconds warm-up time after powering PIR for sensor baseline stabilization."
+  },
+  {
+    "id": "weather-station-lcd",
+    "title": "Mini Weather Station & Hygrometer",
+    "description": "Real-time room climate station displaying temperature, relative humidity, and heat index on a backlit 16x2 LCD.",
+    "difficulty": "Intermediate",
+    "timeHours": 2.5,
+    "tags": ["Weather", "Sensors", "Display", "Arduino"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "dht11", "qty": 1, "critical": true },
+      { "componentId": "lcd-16x2", "qty": 1, "critical": true },
+      { "componentId": "breadboard", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false },
+      { "componentId": "usb-cable", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Connect I2C backpack pins on 16x2 LCD: SDA to A4, SCL to A5, VCC to 5V, GND to GND.",
+      "Wire DHT11 data pin to digital pin 4 with a 10k pull-up resistor from resistor pack.",
+      "Include LiquidCrystal_I2C and DHT sensor libraries.",
+      "Compute heat index comfort levels based on NOAA formula.",
+      "Refresh formatted display every 2 seconds: 'Temp: 24.5C | Hum: 58%'."
+    ],
+    "safetyNote": "Do not touch sensor sensing grid directly with fingers to prevent skin oil contamination."
+  },
+  {
+    "id": "rfid-door-lock",
+    "title": "RFID Contactless Door Access Lock",
+    "description": "Keyless entry controller that checks 13.56MHz RFID key fobs, verifies UID in authorized memory, and actuates a locking servo.",
+    "difficulty": "Intermediate",
+    "timeHours": 3.5,
+    "tags": ["Security", "RFID", "Access Control", "Robotics"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "rfid-rc522", "qty": 1, "critical": true },
+      { "componentId": "servo-sg90", "qty": 1, "critical": true },
+      { "componentId": "piezo-buzzer", "qty": 1, "critical": false },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "breadboard", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Wire RC522 SPI pins to Arduino: SS->D10, MOSI->D11, MISO->D12, SCK->D13, RST->D9.",
+      "CRITICAL: RC522 power MUST be connected to 3.3V (NOT 5V) to prevent module burnout.",
+      "Connect SG90 servo signal wire to pin 3 to actuate the door deadbolt linkage.",
+      "Read master tag UID and store in EEPROM authorization table.",
+      "Trigger chime, flash green LED, and rotate servo 90 degrees for 5 seconds upon valid badge scan."
+    ],
+    "safetyNote": "Always connect RC522 to 3.3V rail. Connecting 5V will permanently damage the MFRC522 IC."
+  },
+  {
+    "id": "obstacle-avoiding-bot",
+    "title": "Self-Navigating Obstacle Robot",
+    "description": "Autonomous mobile robot that scans surroundings with an ultrasonic radar sensor mounted on a servo to navigate around obstacles without collision.",
+    "difficulty": "Advanced",
+    "timeHours": 4.5,
+    "tags": ["Robotics", "Autonomous", "Sensors", "Motors"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "hc-sr04", "qty": 1, "critical": true },
+      { "componentId": "servo-sg90", "qty": 1, "critical": true },
+      { "componentId": "l298n-driver", "qty": 1, "critical": true },
+      { "componentId": "dc-motor", "qty": 2, "critical": true },
+      { "componentId": "chassis-wheels", "qty": 1, "critical": false },
+      { "componentId": "battery-18650", "qty": 2, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Mount ultrasonic sensor on top of SG90 servo horn on the front bumper.",
+      "Wire L298N driver inputs to Arduino PWM pins 5, 6, 9, 10 for speed control.",
+      "Connect two 18650 cells in series (7.4V) to power the L298N motor rail.",
+      "Implement scan routine: when front path < 25cm, stop, turn servo left/right, compare clearance distances.",
+      "Turn chassis toward the clearer direction and resume forward drive."
+    ],
+    "safetyNote": "Common ground between Arduino GND and 7.4V battery pack is mandatory for reliable logic signals."
+  },
+  {
+    "id": "solar-phone-charger",
+    "title": "Off-Grid Solar Device Charger",
+    "description": "Green off-grid solar energy harvesting station that charges USB gadgets and rechargeable cells cleanly from sunlight.",
+    "difficulty": "Intermediate",
+    "timeHours": 2.5,
+    "tags": ["Solar", "Clean Energy", "Power", "Eco"],
+    "requirements": [
+      { "componentId": "solar-panel-small", "qty": 1, "critical": true },
+      { "componentId": "tp4056", "qty": 1, "critical": true },
+      { "componentId": "boost-converter", "qty": 1, "critical": true },
+      { "componentId": "battery-18650", "qty": 1, "critical": true },
+      { "componentId": "usb-cable", "qty": 1, "critical": false },
+      { "componentId": "capacitors-pack", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Solder blocking Schottky diode in series with solar panel positive terminal to prevent reverse discharge.",
+      "Connect solar output to TP4056 IN+ and IN- charging input pins.",
+      "Wire single 18650 buffer cell to B+ and B- to store harvested solar energy.",
+      "Connect boost converter to OUT+ and OUT- and adjust trimmer pot to output 5.05V.",
+      "Enclose inside weatherproof transparent container facing south at ~30 degree tilt."
+    ],
+    "safetyNote": "Keep lithium battery shaded from direct solar baking; high temperatures cause thermal degradation."
+  },
+  {
+    "id": "digital-clock-7seg",
+    "title": "Digital Desk Clock & Stopwatch",
+    "description": "Accurate 4-digit 7-segment digital timekeeper with colon blinker, stopwatch countdown mode, and push-button time controls.",
+    "difficulty": "Beginner",
+    "timeHours": 2.0,
+    "tags": ["Display", "Clock", "Utility", "Arduino"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "seven-segment", "qty": 1, "critical": true },
+      { "componentId": "push-buttons", "qty": 2, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false },
+      { "componentId": "breadboard", "qty": 1, "critical": false },
+      { "componentId": "usb-cable", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Connect TM1637 display module CLK to Nano D2 and DIO to Nano D3.",
+      "Connect display VCC to 5V and GND to GND.",
+      "Wire two tactile push-buttons to D4 and D5 with pull-up resistors for Hour/Minute increment.",
+      "Implement internal millis() software clock with millisecond rollover handling.",
+      "Display HH:MM with toggling colon separator and long-press stopwatch mode."
+    ],
+    "safetyNote": "Debounce push-buttons in software (20-30ms) to prevent erroneous double-incrementing."
+  },
+  {
+    "id": "ir-remote-appliance-switch",
+    "title": "IR Remote AC Relay Switch",
+    "description": "Decode infrared signals from old TV/DVD remotes to toggle appliances or bench lights via an optoisolated relay module.",
+    "difficulty": "Intermediate",
+    "timeHours": 2.5,
+    "tags": ["Home Automation", "Remote Control", "Sensors", "Relay"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "ir-receiver", "qty": 1, "critical": true },
+      { "componentId": "relay-5v", "qty": 1, "critical": true },
+      { "componentId": "ir-remote", "qty": 1, "critical": false },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Connect TSOP38238 IR receiver OUT to Arduino pin 11, VCC to 5V, GND to GND.",
+      "Upload IRrecvDump sketch to capture hex codes emitted by your spare remote control buttons.",
+      "Connect 5V relay IN pin to Arduino digital pin 7.",
+      "Map captured hex codes to relay toggle logic with state retention in memory.",
+      "Add indicator LED to reflect active relay power state."
+    ],
+    "safetyNote": "MAINS VOLTAGE WARNING: If switching 120V/240V mains, encase all AC contacts in certified insulated junction box."
+  },
+  {
+    "id": "rgb-ambient-mood-lamp",
+    "title": "Addressable NeoPixel Mood Lamp",
+    "description": "Dynamic ambient room illuminator featuring color gradient flows, breathing animations, and rotary speed/brightness dimmer.",
+    "difficulty": "Beginner",
+    "timeHours": 2.0,
+    "tags": ["Lighting", "Display", "Aesthetics", "Arduino"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "rgb-led-strip", "qty": 1, "critical": true },
+      { "componentId": "potentiometer-10k", "qty": 1, "critical": false },
+      { "componentId": "capacitors-pack", "qty": 1, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false },
+      { "componentId": "phone-charger", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Solder 470-ohm resistor between Arduino data pin 6 and WS2812B DIN line.",
+      "Place 1000uF capacitor across 5V and GND rail near the LED strip to absorb initial power surges.",
+      "Wire 10k potentiometer center wiper to Analog pin A0 to control animation speed or hue.",
+      "Install FastLED library and program rainbow cycle, fireplace flicker, and breathing modes.",
+      "Wrap strip inside frosted recycled diffuser bottle for soothing dispersed illumination."
+    ],
+    "safetyNote": "Addressable LED strips draw substantial current (~60mA per LED at full white). Use dedicated 5V 2A power supply for strips >30 LEDs."
+  },
+  {
+    "id": "esp8266-wifi-smart-switch",
+    "title": "ESP8266 IoT Web Smart Switch",
+    "description": "Internet-connected smart plug toggle accessible from any browser on local Wi-Fi, featuring RESTful endpoints and web dashboard.",
+    "difficulty": "Intermediate",
+    "timeHours": 3.0,
+    "tags": ["IoT", "ESP8266", "Web Server", "Home Automation"],
+    "requirements": [
+      { "componentId": "esp8266", "qty": 1, "critical": true },
+      { "componentId": "relay-5v", "qty": 1, "critical": true },
+      { "componentId": "phone-charger", "qty": 1, "critical": true },
+      { "componentId": "led-pack", "qty": 1, "critical": false },
+      { "componentId": "resistors-pack", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Wire ESP8266 NodeMCU pin D1 (GPIO5) to relay module control IN pin.",
+      "Power NodeMCU via micro-USB port from recycled 5V 2A phone charger.",
+      "Program ESP8266 as asynchronous web server hosting a lightweight responsive UI.",
+      "Add JSON endpoints (/api/relay/on, /api/relay/off, /api/status).",
+      "Connect to local Wi-Fi router and navigate to assigned DHCP IP address to toggle lights from phone."
+    ],
+    "safetyNote": "Ensure relay optocoupler jumper is set correctly for 3.3V logic compatibility."
+  },
+  {
+    "id": "automated-plant-watering",
+    "title": "Automated Plant Irrigation System",
+    "description": "Closed-loop micro irrigation station that measures soil dryness and activates a mini submersible pump to water plants automatically.",
+    "difficulty": "Intermediate",
+    "timeHours": 3.5,
+    "tags": ["Gardening", "Automation", "Motors", "Sensors"],
+    "requirements": [
+      { "componentId": "arduino-uno", "qty": 1, "critical": true },
+      { "componentId": "soil-moisture", "qty": 1, "critical": true },
+      { "componentId": "water-pump-mini", "qty": 1, "critical": true },
+      { "componentId": "relay-5v", "qty": 1, "critical": true },
+      { "componentId": "adapter-5v", "qty": 1, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Insert soil moisture sensor probe securely into plant root container.",
+      "Connect moisture sensor analog pin to Arduino pin A1.",
+      "Wire relay module control input to digital pin 8.",
+      "Route DC positive power through relay COM and NO (Normally Open) contacts to the mini pump.",
+      "Program hysteresis loop: activate pump for 5 seconds when soil ADC > 650, wait 15 minutes before re-checking."
+    ],
+    "safetyNote": "Keep all electrical boards elevated away from water reservoir to prevent accidental spills or short-circuits."
+  },
+  {
+    "id": "line-follower-robot",
+    "title": "Precision Line Follower Robot",
+    "description": "Dual-sensor autonomous differential steering robot that follows dark track paths on bright floors using infrared reflectance sensors.",
+    "difficulty": "Intermediate",
+    "timeHours": 4.0,
+    "tags": ["Robotics", "Sensors", "Automation", "Motors"],
+    "requirements": [
+      { "componentId": "arduino-nano", "qty": 1, "critical": true },
+      { "componentId": "ir-sensor", "qty": 2, "critical": true },
+      { "componentId": "l298n-driver", "qty": 1, "critical": true },
+      { "componentId": "dc-motor", "qty": 2, "critical": true },
+      { "componentId": "chassis-wheels", "qty": 1, "critical": false },
+      { "componentId": "battery-18650", "qty": 2, "critical": false },
+      { "componentId": "jumper-wires", "qty": 1, "critical": false }
+    ],
+    "steps": [
+      "Mount two IR obstacle/line sensors on bottom front chassis, spaced 2cm apart.",
+      "Calibrate sensor trimmer pots so digital output turns HIGH on white paper and LOW on black electrical tape.",
+      "Wire left sensor to Arduino D2 and right sensor to D3.",
+      "Wire L298N motor driver inputs to D5, D6, D9, D10.",
+      "Implement PID or bang-bang steering logic: veer left if right sensor hits tape, veer right if left sensor hits tape."
+    ],
+    "safetyNote": "Tune motor speeds so vehicle does not overshoot sharp turns due to chassis momentum."
+  }
+]

@@ -1,0 +1,418 @@
+[
+  {
+    "id": "arduino-uno",
+    "name": "Arduino Uno R3",
+    "category": "Microcontroller",
+    "avgWeightKg": 0.025,
+    "avgPriceINR": 450,
+    "safety": "none"
+  },
+  {
+    "id": "arduino-nano",
+    "name": "Arduino Nano",
+    "category": "Microcontroller",
+    "avgWeightKg": 0.007,
+    "avgPriceINR": 240,
+    "safety": "none"
+  },
+  {
+    "id": "esp8266",
+    "name": "ESP8266 NodeMCU",
+    "category": "Microcontroller",
+    "avgWeightKg": 0.012,
+    "avgPriceINR": 220,
+    "safety": "none"
+  },
+  {
+    "id": "esp32",
+    "name": "ESP32 DevKit V1",
+    "category": "Microcontroller",
+    "avgWeightKg": 0.015,
+    "avgPriceINR": 380,
+    "safety": "none"
+  },
+  {
+    "id": "raspberry-pi-3",
+    "name": "Raspberry Pi 3 Model B",
+    "category": "Microcontroller",
+    "avgWeightKg": 0.045,
+    "avgPriceINR": 3200,
+    "safety": "none"
+  },
+  {
+    "id": "hc-sr04",
+    "name": "HC-SR04 Ultrasonic Sensor",
+    "category": "Sensor",
+    "avgWeightKg": 0.009,
+    "avgPriceINR": 85,
+    "safety": "none"
+  },
+  {
+    "id": "pir-sensor",
+    "name": "HC-SR501 PIR Motion Sensor",
+    "category": "Sensor",
+    "avgWeightKg": 0.008,
+    "avgPriceINR": 95,
+    "safety": "none"
+  },
+  {
+    "id": "dht11",
+    "name": "DHT11 Temp & Humidity Sensor",
+    "category": "Sensor",
+    "avgWeightKg": 0.005,
+    "avgPriceINR": 75,
+    "safety": "none"
+  },
+  {
+    "id": "ldr-sensor",
+    "name": "LDR Light Dependent Resistor",
+    "category": "Sensor",
+    "avgWeightKg": 0.002,
+    "avgPriceINR": 15,
+    "safety": "none"
+  },
+  {
+    "id": "ir-sensor",
+    "name": "IR Obstacle Sensor Module",
+    "category": "Sensor",
+    "avgWeightKg": 0.006,
+    "avgPriceINR": 45,
+    "safety": "none"
+  },
+  {
+    "id": "soil-moisture",
+    "name": "Capacitive Soil Moisture Probe",
+    "category": "Sensor",
+    "avgWeightKg": 0.012,
+    "avgPriceINR": 110,
+    "safety": "none"
+  },
+  {
+    "id": "sound-sensor",
+    "name": "Microphone Sound Detector Module",
+    "category": "Sensor",
+    "avgWeightKg": 0.005,
+    "avgPriceINR": 65,
+    "safety": "none"
+  },
+  {
+    "id": "lcd-16x2",
+    "name": "16x2 Character LCD Display (I2C)",
+    "category": "Display",
+    "avgWeightKg": 0.038,
+    "avgPriceINR": 180,
+    "safety": "none"
+  },
+  {
+    "id": "oled-096",
+    "name": "0.96 inch I2C OLED Display (SSD1306)",
+    "category": "Display",
+    "avgWeightKg": 0.009,
+    "avgPriceINR": 230,
+    "safety": "none"
+  },
+  {
+    "id": "seven-segment",
+    "name": "4-Digit 7-Segment Display (TM1637)",
+    "category": "Display",
+    "avgWeightKg": 0.016,
+    "avgPriceINR": 120,
+    "safety": "none"
+  },
+  {
+    "id": "phone-screen",
+    "name": "Salvaged Smartphone Screen Assembly",
+    "category": "Display",
+    "avgWeightKg": 0.048,
+    "avgPriceINR": 350,
+    "safety": "none"
+  },
+  {
+    "id": "dc-motor",
+    "name": "3V-6V TT Gear DC Motor",
+    "category": "Motor",
+    "avgWeightKg": 0.032,
+    "avgPriceINR": 60,
+    "safety": "none"
+  },
+  {
+    "id": "servo-sg90",
+    "name": "SG90 9g Micro Servo Motor",
+    "category": "Motor",
+    "avgWeightKg": 0.014,
+    "avgPriceINR": 110,
+    "safety": "none"
+  },
+  {
+    "id": "stepper-motor",
+    "name": "28BYJ-48 Stepper Motor + ULN2003",
+    "category": "Motor",
+    "avgWeightKg": 0.042,
+    "avgPriceINR": 160,
+    "safety": "none"
+  },
+  {
+    "id": "laptop-fan",
+    "name": "5V Laptop Blower / Radial Fan",
+    "category": "Motor",
+    "avgWeightKg": 0.035,
+    "avgPriceINR": 150,
+    "safety": "none"
+  },
+  {
+    "id": "vibration-motor",
+    "name": "Mini Coin Vibration Motor",
+    "category": "Motor",
+    "avgWeightKg": 0.003,
+    "avgPriceINR": 30,
+    "safety": "none"
+  },
+  {
+    "id": "relay-5v",
+    "name": "5V 1-Channel Relay Module (Optocoupler)",
+    "category": "Module",
+    "avgWeightKg": 0.018,
+    "avgPriceINR": 70,
+    "safety": "mains"
+  },
+  {
+    "id": "l298n-driver",
+    "name": "L298N Dual H-Bridge Motor Driver",
+    "category": "Module",
+    "avgWeightKg": 0.033,
+    "avgPriceINR": 140,
+    "safety": "none"
+  },
+  {
+    "id": "hc-05",
+    "name": "HC-05 Bluetooth Serial Module",
+    "category": "Module",
+    "avgWeightKg": 0.005,
+    "avgPriceINR": 240,
+    "safety": "none"
+  },
+  {
+    "id": "rfid-rc522",
+    "name": "RC522 RFID Reader Module + Cards",
+    "category": "Module",
+    "avgWeightKg": 0.018,
+    "avgPriceINR": 190,
+    "safety": "none"
+  },
+  {
+    "id": "tp4056",
+    "name": "TP4056 1A Li-ion Charging Module",
+    "category": "Module",
+    "avgWeightKg": 0.004,
+    "avgPriceINR": 35,
+    "safety": "battery"
+  },
+  {
+    "id": "buck-converter",
+    "name": "LM2596 Step-Down Buck Converter",
+    "category": "Module",
+    "avgWeightKg": 0.015,
+    "avgPriceINR": 90,
+    "safety": "none"
+  },
+  {
+    "id": "boost-converter",
+    "name": "MT3608 Step-Up Boost Converter",
+    "category": "Module",
+    "avgWeightKg": 0.008,
+    "avgPriceINR": 65,
+    "safety": "none"
+  },
+  {
+    "id": "sd-card-module",
+    "name": "Micro SD Card SPI Module",
+    "category": "Module",
+    "avgWeightKg": 0.006,
+    "avgPriceINR": 60,
+    "safety": "none"
+  },
+  {
+    "id": "ir-receiver",
+    "name": "TSOP38238 IR Receiver Sensor",
+    "category": "Sensor",
+    "avgWeightKg": 0.002,
+    "avgPriceINR": 25,
+    "safety": "none"
+  },
+  {
+    "id": "ir-remote",
+    "name": "Infrared Remote Handset",
+    "category": "Misc",
+    "avgWeightKg": 0.040,
+    "avgPriceINR": 90,
+    "safety": "none"
+  },
+  {
+    "id": "battery-18650",
+    "name": "18650 3.7V Li-ion Rechargeable Cell",
+    "category": "Power",
+    "avgWeightKg": 0.045,
+    "avgPriceINR": 150,
+    "safety": "battery"
+  },
+  {
+    "id": "battery-9v",
+    "name": "9V Alkaline Battery & Clip",
+    "category": "Power",
+    "avgWeightKg": 0.046,
+    "avgPriceINR": 60,
+    "safety": "battery"
+  },
+  {
+    "id": "phone-charger",
+    "name": "5V 2A USB Phone Wall Charger",
+    "category": "Power",
+    "avgWeightKg": 0.055,
+    "avgPriceINR": 160,
+    "safety": "mains"
+  },
+  {
+    "id": "adapter-5v",
+    "name": "5V 2A DC Barrel Jack Adapter",
+    "category": "Power",
+    "avgWeightKg": 0.080,
+    "avgPriceINR": 180,
+    "safety": "mains"
+  },
+  {
+    "id": "solar-panel-small",
+    "name": "5V 1W Monocrystalline Mini Solar Panel",
+    "category": "Power",
+    "avgWeightKg": 0.038,
+    "avgPriceINR": 140,
+    "safety": "none"
+  },
+  {
+    "id": "laptop-power-brick",
+    "name": "19V 65W Laptop Power Supply",
+    "category": "Power",
+    "avgWeightKg": 0.280,
+    "avgPriceINR": 600,
+    "safety": "mains"
+  },
+  {
+    "id": "speaker-8ohm",
+    "name": "8-Ohm 1W Salvaged Mini Speaker",
+    "category": "Misc",
+    "avgWeightKg": 0.016,
+    "avgPriceINR": 40,
+    "safety": "none"
+  },
+  {
+    "id": "piezo-buzzer",
+    "name": "5V Active Piezo Buzzer",
+    "category": "Passive",
+    "avgWeightKg": 0.003,
+    "avgPriceINR": 20,
+    "safety": "none"
+  },
+  {
+    "id": "led-pack",
+    "name": "Assorted 5mm LEDs (Pack of 5)",
+    "category": "Passive",
+    "avgWeightKg": 0.004,
+    "avgPriceINR": 25,
+    "safety": "none"
+  },
+  {
+    "id": "rgb-led-strip",
+    "name": "WS2812B Addressable RGB LED Strip (1m)",
+    "category": "Display",
+    "avgWeightKg": 0.035,
+    "avgPriceINR": 280,
+    "safety": "none"
+  },
+  {
+    "id": "resistors-pack",
+    "name": "Assorted Metal Film Resistors (Pack of 20)",
+    "category": "Passive",
+    "avgWeightKg": 0.005,
+    "avgPriceINR": 20,
+    "safety": "none"
+  },
+  {
+    "id": "capacitors-pack",
+    "name": "Assorted Electrolytic Capacitors (Pack of 5)",
+    "category": "Passive",
+    "avgWeightKg": 0.012,
+    "avgPriceINR": 35,
+    "safety": "capacitor"
+  },
+  {
+    "id": "push-buttons",
+    "name": "Tactile Momentary Push Buttons (Pack of 4)",
+    "category": "Passive",
+    "avgWeightKg": 0.004,
+    "avgPriceINR": 20,
+    "safety": "none"
+  },
+  {
+    "id": "potentiometer-10k",
+    "name": "10k Rotary Potentiometer",
+    "category": "Passive",
+    "avgWeightKg": 0.008,
+    "avgPriceINR": 25,
+    "safety": "none"
+  },
+  {
+    "id": "breadboard",
+    "name": "MB-102 830-Point Solderless Breadboard",
+    "category": "Connector",
+    "avgWeightKg": 0.075,
+    "avgPriceINR": 110,
+    "safety": "none"
+  },
+  {
+    "id": "jumper-wires",
+    "name": "Dupont Jumper Wires M-M/M-F (Bundle of 20)",
+    "category": "Connector",
+    "avgWeightKg": 0.022,
+    "avgPriceINR": 50,
+    "safety": "none"
+  },
+  {
+    "id": "usb-cable",
+    "name": "USB-A to Type-C / Micro-USB Cable",
+    "category": "Connector",
+    "avgWeightKg": 0.028,
+    "avgPriceINR": 60,
+    "safety": "none"
+  },
+  {
+    "id": "chassis-wheels",
+    "name": "Robot 2WD Acrylic Chassis & Wheels",
+    "category": "Misc",
+    "avgWeightKg": 0.160,
+    "avgPriceINR": 220,
+    "safety": "none"
+  },
+  {
+    "id": "water-pump-mini",
+    "name": "3V-5V Submersible Mini Water Pump",
+    "category": "Motor",
+    "avgWeightKg": 0.028,
+    "avgPriceINR": 85,
+    "safety": "none"
+  },
+  {
+    "id": "keyboard-matrix",
+    "name": "Salvaged Keyboard Controller Board",
+    "category": "Module",
+    "avgWeightKg": 0.018,
+    "avgPriceINR": 95,
+    "safety": "none"
+  },
+  {
+    "id": "optical-drive-laser",
+    "name": "Optical Drive Laser Diode & Sled Assembly",
+    "category": "Misc",
+    "avgWeightKg": 0.065,
+    "avgPriceINR": 120,
+    "safety": "none"
+  }
+]

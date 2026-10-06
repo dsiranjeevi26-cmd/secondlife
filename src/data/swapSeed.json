@@ -1,0 +1,62 @@
+[
+  {
+    "id": "swap-1",
+    "type": "offering",
+    "componentId": "hc-sr04",
+    "qty": 2,
+    "note": "Desoldered from an old high-school robotics chassis. Tested and working cleanly on 5V.",
+    "contactName": "Aarav Sharma",
+    "contactLocation": "Lab 304, Electronics Block",
+    "createdAt": "2026-10-04T10:15:00Z"
+  },
+  {
+    "id": "swap-2",
+    "type": "offering",
+    "componentId": "battery-18650",
+    "qty": 4,
+    "note": "Salvaged from a Dell laptop battery pack. Checked at 3.85V each, steady internal resistance.",
+    "contactName": "Priya Nair",
+    "contactLocation": "Hostel 7, Room 212",
+    "createdAt": "2026-10-04T14:30:00Z"
+  },
+  {
+    "id": "swap-3",
+    "type": "offering",
+    "componentId": "esp8266",
+    "qty": 1,
+    "note": "Spare NodeMCU board from an IoT project workshop. Flashed with default AT firmware.",
+    "contactName": "Karan Verma",
+    "contactLocation": "Innovation Hub, Desk 14",
+    "createdAt": "2026-10-05T09:00:00Z"
+  },
+  {
+    "id": "swap-4",
+    "type": "looking",
+    "componentId": "arduino-uno",
+    "qty": 1,
+    "note": "Need an Arduino Uno R3 for building the contactless smart dustbin for dorm corridor.",
+    "contactName": "Sneha Patel",
+    "contactLocation": "Hostel 3, Room 108",
+    "createdAt": "2026-10-03T16:20:00Z"
+  },
+  {
+    "id": "swap-5",
+    "type": "looking",
+    "componentId": "relay-5v",
+    "qty": 2,
+    "note": "Building automated plant watering system; looking for 5V optocoupled relay modules.",
+    "contactName": "Devansh Gupta",
+    "contactLocation": "Makerspace Workbench B",
+    "createdAt": "2026-10-05T11:45:00Z"
+  },
+  {
+    "id": "swap-6",
+    "type": "looking",
+    "componentId": "lcd-16x2",
+    "qty": 1,
+    "note": "Looking for 16x2 LCD display (preferably with I2C backpack) for mini weather station project.",
+    "contactName": "Ananya Roy",
+    "contactLocation": "Physics Dept Lab 2",
+    "createdAt": "2026-10-05T13:10:00Z"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "needId": "arduino-nano",
+    "canUseId": "arduino-uno",
+    "factor": 0.7,
+    "note": "Arduino Uno works as a drop-in code substitute for Nano (requires slightly more space)."
+  },
+  {
+    "needId": "arduino-uno",
+    "canUseId": "arduino-nano",
+    "factor": 0.9,
+    "note": "Arduino Nano has the same ATmega328P core and pin capabilities on a breadboard."
+  },
+  {
+    "needId": "esp8266",
+    "canUseId": "esp32",
+    "factor": 0.7,
+    "note": "ESP32 provides full Wi-Fi support with surplus GPIOs and Bluetooth."
+  },
+  {
+    "needId": "esp32",
+    "canUseId": "esp8266",
+    "factor": 0.8,
+    "note": "ESP8266 handles Wi-Fi connectivity though has fewer analog pins."
+  },
+  {
+    "needId": "lcd-16x2",
+    "canUseId": "oled-096",
+    "factor": 0.7,
+    "note": "0.96\" I2C OLED can display text/metrics with smaller footprint."
+  },
+  {
+    "needId": "oled-096",
+    "canUseId": "lcd-16x2",
+    "factor": 0.7,
+    "note": "16x2 I2C LCD displays textual telemetry in place of graphic OLED."
+  },
+  {
+    "needId": "adapter-5v",
+    "canUseId": "phone-charger",
+    "factor": 0.7,
+    "note": "Standard 5V phone charger delivers stable 5V DC via cut USB cable."
+  },
+  {
+    "needId": "phone-charger",
+    "canUseId": "adapter-5v",
+    "factor": 0.8,
+    "note": "5V 2A DC barrel jack adapter supplies identical 5V regulated power."
+  },
+  {
+    "needId": "piezo-buzzer",
+    "canUseId": "speaker-8ohm",
+    "factor": 0.7,
+    "note": "8-Ohm mini speaker can generate square wave tones using PWM output."
+  },
+  {
+    "needId": "dc-motor",
+    "canUseId": "laptop-fan",
+    "factor": 0.6,
+    "note": "Laptop blower fan motor spins with 5V DC for airflow experiments."
+  },
+  {
+    "needId": "battery-18650",
+    "canUseId": "battery-9v",
+    "factor": 0.6,
+    "note": "9V battery can power microcontroller via VIN through linear regulator."
+  },
+  {
+    "needId": "battery-9v",
+    "canUseId": "battery-18650",
+    "factor": 0.8,
+    "note": "18650 Li-ion cell (with boost converter) provides cleaner sustained current."
+  },
+  {
+    "needId": "servo-sg90",
+    "canUseId": "stepper-motor",
+    "factor": 0.7,
+    "note": "Stepper motor with driver can perform indexed rotational positioning."
+  },
+  {
+    "needId": "usb-cable",
+    "canUseId": "phone-charger",
+    "factor": 0.7,
+    "note": "Most phone chargers include detachable USB cables."
+  }
+]
